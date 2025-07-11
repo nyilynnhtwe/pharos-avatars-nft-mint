@@ -5,6 +5,7 @@ import metadata from "./all_metadata.json";
 import "./App.css";
 import type { NFT } from "./types";
 import { BASE_URI, blockExplorerUrl, CONTRACT_ADDRESS, MINT_PRICE, PHAROS_TESTNET_CHAIN_ID, rpcUrls } from "./constant";
+import { Analytics } from "@vercel/analytics/react";
 
 
 
@@ -535,6 +536,7 @@ function App() {
           </p>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
